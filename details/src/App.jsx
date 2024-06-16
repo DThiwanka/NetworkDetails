@@ -3,12 +3,14 @@ import Ipaddress from "./components/Ipaddress";
 import Homepage from "./components/Homepage";
 import Macaddress from "./components/Macaddress";
 import DeviceDetails from "./components/DeviceDetails";
+import Navbar from "./Navbar";
 
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Router>
 
         <Routes>

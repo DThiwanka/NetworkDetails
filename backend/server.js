@@ -7,15 +7,8 @@ const port = 5000;
 
 app.use(cors());
 
-app.get('/api/get-mac', (req, res) => {
-    try {
-      const macAddress = getmac.default();
-      res.json({ macAddress });
-    } catch (err) {
-      res.status(500).json({ error: 'Unable to fetch MAC address' });
-    }
-  });
-  
+const detailsRouter = require('./routes/Details');  // Ensure this path is correct
+app.use("/api", detailsRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

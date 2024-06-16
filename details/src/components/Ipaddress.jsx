@@ -3,7 +3,6 @@ import axios from 'axios';
 
 const Ipaddress = () => {
   const [ip, setIp] = useState('');
-  const [userAgent, setUserAgent] = useState('');
 
   useEffect(() => {
     const fetchIp = async () => {
@@ -19,10 +18,11 @@ const Ipaddress = () => {
   }, []);
 
   return (
-    <div className='flex justify-center items-center h-screen'>
-       <div className="text-center text-6xl">
-      <h1>Your IP Address is: {ip}</h1>
-      </div>
+    <div className="flex justify-center items-center h-screen">
+      <div className="text-center text-xl sm:text-6xl">
+       <h1>Your IP Address is: <br/></h1>
+       <center className='mt-10'> {ip}</center>
+       </div>
     </div>
   );
 };

@@ -21,8 +21,9 @@ function Macaddress() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="text-center text-6xl">
-       <h1>Your MAC Address is: {mac}</h1>
+      <div className="text-center text-xl sm:text-6xl">
+       <h1>Your MAC Address is: <br/></h1>
+       <center className='mt-10'> {mac}</center>
        </div>
     </div>
   )
