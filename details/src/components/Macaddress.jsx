@@ -8,7 +8,7 @@ function Macaddress() {
     useEffect(() => {
         const fetchMac = async () => {
           try {
-            const response = await axios.get('http://localhost:5000/api/get-mac');
+            const response = await axios.get('https://networkdetails.onrender.com/api/get-mac');
             setMac(response.data.macAddress);
             console.log(response)
           } catch (error) {

@@ -10,7 +10,7 @@ const Device = () => {
   useEffect(() => {
     const fetchDeviceInfo = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/device');
+        const response = await axios.get('https://networkdetails.onrender.com/api/device');
         setDeviceInfo(response.data);
       } catch (err) {
         setError('Failed to fetch device information');

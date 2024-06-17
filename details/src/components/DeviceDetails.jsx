@@ -10,7 +10,7 @@ const DeviceDetails = () => {
     const fetchDetails = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:5000/api/get-location');
+        const response = await axios.get('https://networkdetails.onrender.com/api/get-location');
         setDetails(response.data);
       } catch (error) {
         setError('Error fetching the Device Details address:', error);
