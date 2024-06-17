@@ -4,6 +4,7 @@ import Homepage from "./components/Homepage";
 import Macaddress from "./components/Macaddress";
 import DeviceDetails from "./components/DeviceDetails";
 import Navbar from "./Navbar";
+import Device from "./components/Device";
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/ip" element={<Ipaddress />} />
           <Route path="/mac" element={<Macaddress />} />
           <Route path="/details" element={<DeviceDetails />} />
+          <Route path='/device' element={<Device />}  />
           <Route path='*' element={<Navigate to="/" />} />
         </Routes>
 

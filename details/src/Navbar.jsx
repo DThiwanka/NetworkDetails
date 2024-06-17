@@ -10,6 +10,7 @@ const Navbar = () => {
           <li><a href="/ip" className="text-white hover:text-gray-300">IP</a></li>
           <li><a href="/mac" className="text-white hover:text-gray-300">MAC</a></li>
           <li><a href="/details" className="text-white hover:text-gray-300">Details</a></li>
+          <li><a href="/device" className="text-white hover:text-gray-300">Device</a></li>
         </ul>
       </div>
     </nav>
